@@ -1,0 +1,53 @@
+
+.main-box {
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height:100vh;
+}
+.box {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    display:flex;
+
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    overflow:hidden;
+    border-radius:20px;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 300%;
+    background: linear-gradient(blue,violet);
+    animation: animate 4s linear infinite;
+}
+.box::after {
+    content: '';
+    position: absolute;
+    inset:4px;
+    background: black;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+
+    }
+    100% {
+        transform: rotate(350deg);
+    }
+}
+.box h2 {
+    position:relative;
+    color:white;
+    font-size: 10em;
+  
+   z-index:20;
+
+
+}

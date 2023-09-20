@@ -1,20 +1,15 @@
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import fish from '../assets/land.png';
 import car from '../assets/maa.jpg';
 import cat from '../assets/cat.gif';
-import '../style/springAnimation.css';
 
 function Spring() {
-
     const ref = useRef();
 
     return (
         <div>
-
             <Parallax pages={4} ref={ref}>
-           
-
                 <ParallaxLayer
                     offset={0}
                     speed={1}
@@ -24,7 +19,6 @@ function Spring() {
                         backgroundSize: '2000px, 1000px',
                     }}
                 />
-
 
                 <ParallaxLayer
                     offset={2}
@@ -40,7 +34,7 @@ function Spring() {
                     sticky={{ start: 0.9, end: 2.5 }}
                     style={{ textAlign: 'center' }}
                 >
-                    <img src={cat} />
+                    <img src={cat} alt="Cat" />
                 </ParallaxLayer>
 
                 <ParallaxLayer

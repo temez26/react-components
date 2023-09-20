@@ -1,17 +1,13 @@
 
-import '../style/animation.css'
 
-
-function Animation() {
-   
-
+function Border() {
     return (
-        <div className="box">
-            <h2>
-            Bonkkers
-            </h2>
+        <div className="main-box">
+            <div className="box">
+                <h2>Bonkkers</h2>
+            </div>
         </div>
-    )
+    );
 }
 
-export default Animation
+export default Border;

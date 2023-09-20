@@ -1,7 +1,8 @@
 # React + Vite
 
-This repository has some different react components that can be used in website production.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Components that are included
-- Background animation component (adds cool moving background for the background.)
-- Scroll animation component (Adds cool animation with blur and delay and opacity css properties when scrollin web site giving modern look.)
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

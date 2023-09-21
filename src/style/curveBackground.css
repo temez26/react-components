@@ -1,0 +1,121 @@
+body {
+    margin:0;
+    font-family: 'Promp',sans-serif;
+    color:white;
+    background: black;
+    
+}
+
+section {
+    font-weight:bold;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-height:400px;
+    padding:100px 20vw;
+}
+.curve {
+    position :absolute;
+    height: 225px;
+    width: 100%;
+    bottom:0;
+}
+
+.curve::before {
+    content:'';
+    display:block;
+    position:absolute;
+    border-radius:100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: black;
+    transform: translate(85%, 60%);
+}
+
+    .curve::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: blue;
+        transform: translate(-4%, 40%);
+        z-index:-1;
+    }
+
+
+.blue {
+    background: blue;
+}
+
+.red {
+  
+}
+
+.pink {
+    background:purple;
+}
+.bubble {
+    color:black;
+    
+}
+
+.bubble::after {
+    
+    content:'';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    height: 85%;
+    width: 100%;
+    background-color: yellow;
+    z-index:-1;
+}
+.dark {
+    background:black;
+}
+.wawe{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+    .wawe svg {
+        position: relative;
+        display: block;
+        width: calc(142% + 1.3px);
+        height: 265px;
+    }
+
+    .wawe .shape-fill {
+        fill: #D17D00;
+ 
+        }
+
+
+
+.spacer {
+    
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer {
+    background-image: url('../assets/wawes.svg')
+}
+.layer1 {
+    background-image:  url('../assets/wawe1.svg')
+}
+
+.flip {
+    transform: rotate(180deg);
+}

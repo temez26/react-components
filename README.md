@@ -6,6 +6,7 @@
 - Scroll animation component.
 - Lottie icons animaton component.
 - Wave backgrounds component.
+- css scroll snap component.
 
 ## How to use
 To change the component go to main.jsx and select what component you want to use and remember to import the right css file to the right react component(they are named the same)
@@ -13,5 +14,5 @@ To change the component go to main.jsx and select what component you want to use
 ## To do list
 - Better Folder structure
 - React router implementation between components
-- css scroll snap
+- css scroll snap Done
   

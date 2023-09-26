@@ -14,5 +14,4 @@ To change the component go to main.jsx and select what component you want to use
 ## To do list
 - Better Folder structure
 - React router implementation between components
-- css scroll snap Done
-  
+
